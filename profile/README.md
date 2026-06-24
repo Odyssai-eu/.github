@@ -2,10 +2,10 @@
 
 # OdyssAI
 
-**European open-source local AI ecosystem.**
+**European sovereign local AI ecosystem.**
 Infrastructure you control, frontier-grade experience.
 
-[**odyssai.eu**](https://odyssai.eu) · Apache 2.0 · Built in Europe · Pre-release
+[**odyssai.eu**](https://odyssai.eu) · Built in Europe · Pre-release
 
 </div>
 
@@ -34,7 +34,7 @@ Everything speaks standard **OpenAI** and **Anthropic** APIs. No proprietary SDK
 
 ## Status
 
-Pre-release, already running internally. Source opening progressively under **Apache 2.0**.
+Pre-release, already running internally. **Available on-premise — get in touch.**
 
 **→ [See the pitch](https://odyssai.eu/pitch/full/) · [Read the docs](https://odyssai.eu/docs) · [odyssai.eu](https://odyssai.eu)**
 
