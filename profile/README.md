@@ -41,3 +41,5 @@ Pre-release, already running internally. **Available on-premise — get in touch
 <div align="center">
 <sub>OdyssAI by The Monocle Bear OÜ · Local AI infrastructure and experience, built in Europe.</sub>
 </div>
+
+OdyssAI core is AGPL-3.0. Commercial licensing available — contact me for detail. (see website)
