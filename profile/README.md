@@ -27,7 +27,7 @@ OdyssAI is two pieces: **OdyssAI-X**, the engine that runs the models, and **Coe
 
 Everything speaks standard **OpenAI** and **Anthropic** APIs. No proprietary SDK — Claude Code, IDE agents and any existing client work unchanged.
 
-Also in this organisation: [**Guardian**](https://github.com/Odyssai-eu/odyssai-guardian) (confidential-content detection before anything leaves for a cloud provider), [**CodeOS**](https://github.com/Odyssai-eu/CodeOS) (the coding app whose orchestrator and agents now live in Nemo's Code mode), [**odyssai-services**](https://github.com/Odyssai-eu/odyssai-services) (bench and sidecar tooling), [**mlx-swift-lm**](https://github.com/Odyssai-eu/mlx-swift-lm).
+Also in this organisation: [**Guardian**](https://github.com/Odyssai-eu/odyssai-guardian) (confidential-content detection before anything leaves for a cloud provider), [**CodeOS**](https://github.com/Odyssai-eu/CodeOS) (a 100 % coding app: a version of opencode that keeps following upstream), [**odyssai-services**](https://github.com/Odyssai-eu/odyssai-services) (bench and sidecar tooling), [**mlx-swift-lm**](https://github.com/Odyssai-eu/mlx-swift-lm).
 
 ## Why it matters
 
