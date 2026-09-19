@@ -15,16 +15,19 @@ Infrastructure you control, frontier-grade experience.
 
 Running models on your own hardware shouldn't cost you the quality, memory, speed and agentic capability expected from a frontier product. OdyssAI is two pieces that together give you exactly that — on Apple Silicon you own, with the cloud only where *you* decide.
 
-## The stack — two components, one experience
+## The stack — an engine and a client, one experience
+
+OdyssAI is two pieces: **OdyssAI-X**, the engine that runs the models, and **CoeOS**, the client you use every day. CoeOS itself ships as two repositories: **Nemo**, the app on your Mac, and the **CoeOS box**, the smart router behind it.
 
 | Project | Role | Runs on |
 |---|---|---|
-| [**OdyssAI-X**](https://github.com/Odyssai-eu/OdyssAI-X) | The **engine**. Distributed MLX inference across Apple Silicon (pipeline / tensor parallel over Thunderbolt 5 RDMA or TCP), **replica mode** for many users at once, vision models, one control plane for many models. OpenAI and Anthropic APIs. | One Mac to a rack of Mac Studios |
-| [**CoeOS**](https://github.com/Odyssai-eu/coeos) | The **smart client** — a complete AI operating system with the **smart router built in**. Every request goes to the model proven best at that skill (from benchmarks, not marketing): local on OdyssAI-X, or cloud with your own keys. **Nemo** is the app on your Mac (a signed, notarized `.dmg`, [releases](https://github.com/Odyssai-eu/coeos/releases)); [**coeos-box**](https://github.com/Odyssai-eu/coeos-box) is the router with users, tokens, quotas and the *Theseus* console. | Your machine; talks to the engine and, if you choose, the cloud |
+| [**OdyssAI-X**](https://github.com/Odyssai-eu/OdyssAI-X) | The **engine**. Distributed MLX inference across Apple Silicon (pipeline / tensor parallel over Thunderbolt 5 RDMA or TCP), **replica mode** for many users at once, vision models, one control plane for many models. OpenAI and Anthropic APIs. AGPL-3.0. | One Mac to a rack of Mac Studios |
+| [**Nemo**](https://github.com/Odyssai-eu/coeos) | The **CoeOS client**: a desktop AI operating system for one person. Chat with visible reasoning and personal memory, cowork on documents with the model, code with a panel of agents. Every turn shows which model served it and why. Signed, notarized macOS app: [releases](https://github.com/Odyssai-eu/coeos/releases). MIT. | Your Mac (Apple Silicon) |
+| [**CoeOS box**](https://github.com/Odyssai-eu/coeos-box) | The **smart router**. Every request goes to the model proven best at that skill (from benchmarks, not marketing): local on OdyssAI-X, or cloud with your own keys. Users, tokens, quotas, the *Theseus* console. MIT. | A container on your LAN or your VPS |
 
 Everything speaks standard **OpenAI** and **Anthropic** APIs. No proprietary SDK — Claude Code, IDE agents and any existing client work unchanged.
 
-Also in this organisation: [**Guardian**](https://github.com/Odyssai-eu/odyssai-guardian) (confidential-content detection before anything leaves for a cloud provider), [**odyssai-services**](https://github.com/Odyssai-eu/odyssai-services) (bench and sidecar tooling), [**mlx-swift-lm**](https://github.com/Odyssai-eu/mlx-swift-lm).
+Also in this organisation: [**Guardian**](https://github.com/Odyssai-eu/odyssai-guardian) (confidential-content detection before anything leaves for a cloud provider), [**CodeOS**](https://github.com/Odyssai-eu/CodeOS) (the coding app whose orchestrator and agents now live in Nemo's Code mode), [**odyssai-services**](https://github.com/Odyssai-eu/odyssai-services) (bench and sidecar tooling), [**mlx-swift-lm**](https://github.com/Odyssai-eu/mlx-swift-lm).
 
 ## Why it matters
 
@@ -44,4 +47,4 @@ Pre-release, running in production internally. **Available on-premise — get in
 <sub>OdyssAI by The Monocle Bear OÜ · Local AI infrastructure and experience, built in Europe.</sub>
 </div>
 
-OdyssAI-X is AGPL-3.0; CoeOS, Guardian and mlx-swift-lm are MIT. Commercial licensing for the engine is available — see the website.
+OdyssAI-X is AGPL-3.0; Nemo, the CoeOS box, Guardian, CodeOS and mlx-swift-lm are MIT. Commercial licensing for the engine is available — see the website.
