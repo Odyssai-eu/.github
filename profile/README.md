@@ -20,7 +20,7 @@ Running models on your own hardware shouldn't cost you the quality, memory, spee
 | Project | Role | Runs on |
 |---|---|---|
 | [**OdyssAI-X**](https://github.com/Odyssai-eu/OdyssAI-X) | The **engine**. Distributed MLX inference across Apple Silicon (pipeline / tensor parallel over Thunderbolt 5 RDMA or TCP), **replica mode** for many users at once, vision models, one control plane for many models. OpenAI and Anthropic APIs. | One Mac to a rack of Mac Studios |
-| [**CoeOS**](https://github.com/Odyssai-eu/coeos) | The **smart client** — a complete AI operating system with the **smart router built in**. Every request goes to the model proven best at that skill (from benchmarks, not marketing): local on OdyssAI-X, or cloud with your own keys. Users, tokens, quotas, the *Theseus* console. | Your machine; talks to the engine and, if you choose, the cloud |
+| [**CoeOS**](https://github.com/Odyssai-eu/coeos) | The **smart client** — a complete AI operating system with the **smart router built in**. Every request goes to the model proven best at that skill (from benchmarks, not marketing): local on OdyssAI-X, or cloud with your own keys. **Nemo** is the app on your Mac (a signed, notarized `.dmg`, [releases](https://github.com/Odyssai-eu/coeos/releases)); [**coeos-box**](https://github.com/Odyssai-eu/coeos-box) is the router with users, tokens, quotas and the *Theseus* console. | Your machine; talks to the engine and, if you choose, the cloud |
 
 Everything speaks standard **OpenAI** and **Anthropic** APIs. No proprietary SDK — Claude Code, IDE agents and any existing client work unchanged.
 
