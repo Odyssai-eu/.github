@@ -32,7 +32,7 @@ Also in this organisation: [**Guardian**](https://github.com/Odyssai-eu/odyssai-
 ## Why it matters
 
 - **Not capped at 35B.** OdyssAI-X distributes inference across Apple Silicon over Thunderbolt 5 RDMA — up to ~600B fp16 / ~1T Q8 on five nodes.
-- **Within one point of the frontier.** Qwen 3.5 397B on a four-node cluster reached **94.4%** of Claude Opus on the TMB benchmark.
+- **Within one point of the frontier.** GLM-5.3 (Q8, max effort) served locally by OdyssAI-X scores **97.6%** on the [TMB scoreboard](https://themonoclebear.com/en/scoreboard/): the best local model, 3rd of 81, 0.2 pt behind Fable 5 (97.8%) and ahead of Claude Opus 4.8 (97.0%).
 - **Serves a crowd, not a demo.** Replica mode: one full copy per Mac, continuous batching, session affinity — throughput scales with the machines you add.
 - **Sovereign by construction.** CoeOS ships with tested guarantees: no telemetry, no kill-switch, no mandatory call home. If you stop paying, it keeps running.
 - **On Apple's own stack.** Built directly on MLX and `mlx-distributed`. Not an exo fork, not a llama.cpp wrapper.
